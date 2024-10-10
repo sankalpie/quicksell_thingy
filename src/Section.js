@@ -73,7 +73,7 @@ function Section({ grouping, ordering }) {
           priorityOrder.map((priority) => (
             <div className="column" key={priority}>
               <div className="titleAllign">
-                <h2>{priorityLabels[priority]} ({groupedTickets[priority].length}) </h2>
+                <h2>{priorityLabels[priority]}  </h2>
                 
                 
               </div>
@@ -99,7 +99,7 @@ function Section({ grouping, ordering }) {
           Object.keys(groupedTickets).map((userId) => (
             <div className="column" key={userId}>
               <div className="titleAllign">
-                <h2>{userMap[userId] || "Hritik Roshan"} ({groupedTickets[userId].length})</h2>
+                <h2>{userMap[userId] || "Hritik Roshan"} </h2>
               </div>
               {groupedTickets[userId].map((ticket) => (
                 <MovableCard
@@ -119,7 +119,7 @@ function Section({ grouping, ordering }) {
           Object.keys(groupedTickets).map((group) => (
             <div className="column" key={group}>
               <div className="titleAllign" key={group}>
-                <h2>{group} ({groupedTickets[group].length})</h2>
+                <h2>{group} </h2>
               </div>
               {groupedTickets[group].map((ticket) => (
                 <MovableCard
